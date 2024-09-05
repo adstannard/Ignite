@@ -236,7 +236,7 @@ extension Audio {
         case xm = "audio/xm" // swiftlint:disable:this identifier_name
     }
 
-    // swiftlint:disable function_body_length
+    // swiftlint:disable function_body_length cyclomatic_complexity
     /// Determines the audio file type based on the file extension present in the filename.
     /// - Parameter filename: The name of the file, including its extension.
     /// - Returns: An optional `AudioType` corresponding to the file extension.
@@ -342,5 +342,5 @@ extension Audio {
             nil
         }
     }
-    // swiftlint:enable function_body_length
+    // swiftlint:enable function_body_length cyclomatic_complexity
 }

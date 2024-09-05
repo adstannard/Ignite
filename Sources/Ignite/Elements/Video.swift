@@ -185,7 +185,7 @@ extension Video {
         case webm = "video/webm"
     }
 
-    // swiftlint:disable function_body_length
+    // swiftlint:disable function_body_length cyclomatic_complexity
     /// Determines the video file type based on the file extension present in the filename.
     /// - Parameter filename: The name of the file, including its extension.
     /// - Returns: An optional `VideoType` corresponding to the file extension.
@@ -256,5 +256,5 @@ extension Video {
             nil
         }
     }
-    // swiftlint:enable function_body_length
+    // swiftlint:enable function_body_length cyclomatic_complexity
 }
